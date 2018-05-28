@@ -9,11 +9,12 @@ body {
     background: #1b1b1b;
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: 300;
-    padding-top: 60px;
+    /*padding-top: 30px;*/
 }
 
 #wrapper {
-    padding-top: 5%;
+    /*padding-top: 5%;*/
+    padding-top: 30px;
 }
 
 .instrucoes {

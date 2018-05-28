@@ -28,9 +28,9 @@
 </div>
 <div class="row rodape-botoes rodape-botoes-sombra">
     <div class="col-xs-12 col-md-12 text-center">
-        <h3>Dados jogados</h3>
+        <h4>Dados jogados</h4>
         <canvas id="canvas" width="800" height="200">Seu navegador não suporta HTML5 canvas!</canvas>
-        <h3>Pontuação</h3>
+        <h4>Pontuação</h4>
         <p>
             @Html.DropDownList("Categoria", EnumHelper.GetSelectList(typeof(AuroraGame.Models.Enum.Categoria)), "Selecione a categoria que deseja pontuar", new { @class = "form-control" })
         </p>
