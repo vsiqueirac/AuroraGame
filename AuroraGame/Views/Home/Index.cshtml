@@ -1,0 +1,46 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div id="wrapper">
+            <div class="viewport" id="view1">
+                <div class="cube" id="cube1">
+                    <div class="side">
+                        <div class="cube-image">1</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">2</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">3</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">4</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image">5</div>
+                    </div>
+                    <div class="side">
+                        <div class="cube-image active">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rodape-botoes rodape-botoes-sombra">
+    <div class="col-xs-12 col-md-12 text-center">
+        <h3>Dados jogados</h3>
+        <canvas id="canvas" width="800" height="200">Seu navegador não suporta HTML5 canvas!</canvas>
+        <h3>Pontuação</h3>
+        <p>
+            @Html.DropDownList("Categoria", EnumHelper.GetSelectList(typeof(AuroraGame.Models.Enum.Categoria)), "Selecione a categoria que deseja pontuar", new { @class = "form-control" })
+        </p>
+        <p hidden="hidden" id="resultadoApuracao">Clique em Apurar Resultado.</p>
+        <button id="btnGuardar" class="btn btn-primary" type="button" onclick="GuardarDado()">
+            Guardar Dado
+        </button>
+        <button id="btnApurar" class="btn btn-success" type="button" onclick="ApurarResultado()" disabled>
+            Apurar Resultado
+        </button>
+        @Html.ActionLink("Instruções", "Index", "Help", new { area = "" }, new { @class = "btn btn-warning" })
+    </div>
+</div>
